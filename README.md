@@ -12,12 +12,12 @@ From the repository root, run:
 python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:8080` in your browser.
+Open `http://127.0.0.1:8080` in your browser. You can also open `index.html` directly; its asset paths are relative.
 
 ## Updating the homepage
 
 - Edit content and links in `index.html` and presentation in `styles.css`.
-- Agent and AI are marked **Planned**. Their domain names are plain text until the websites launch. Add links and update their status when they are available.
+- The homepage focuses on writing, an introduction, and contact links. Project listings are intentionally omitted.
 - The blog, GitHub, Twitter / X, and email links retain the destinations from the original homepage.
 - The footer year is static; update it when needed.
 - Keep `CNAME` while using the existing GitHub Pages custom domain.

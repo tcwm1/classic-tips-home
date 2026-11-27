@@ -15,7 +15,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
 a { color: inherit; text-decoration: none; }
 a { -webkit-tap-highlight-color: transparent; }
 a:focus-visible { outline: 3px solid var(--blue); outline-offset: 6px; border-radius: 2px; }
-p, h1, h2, h3 { margin: 0; }
+p, h1, h2 { margin: 0; }
 svg { display: block; }
 .shell { width: min(1160px, calc(100% - 96px)); margin-inline: auto; }
 .skip-link { position: absolute; z-index: 10; left: 1rem; top: 1rem; padding: .65rem 1rem; background: var(--ink); color: white; transform: translateY(-200%); }
@@ -49,22 +49,8 @@ h1 em { color: var(--blue); font-weight: 400; }
 .art-bottom strong { color: #fff; font-weight: 400; }
 .art-signature { font-family: var(--serif); font-size: 2.75rem; font-style: italic; color: #fff; letter-spacing: -.08em; line-height: 1; }
 .section-rule { border-top: 1px solid var(--line); }
-.projects-section { display: grid; grid-template-columns: 1fr 1.5fr; gap: 6.5rem; padding-block: 58px 70px; }
-.section-intro .eyebrow, .writing-copy .eyebrow, .about-section .eyebrow { color: var(--blue); margin-bottom: 1rem; }
+.writing-copy .eyebrow, .about-section .eyebrow { color: var(--blue); margin-bottom: 1rem; }
 h2 { font-family: var(--serif); font-size: clamp(2rem, 3vw, 2.65rem); font-weight: 400; line-height: 1.16; letter-spacing: -.045em; }
-.section-intro > p:not(.eyebrow) { margin-top: 1.2rem; max-width: 310px; color: var(--muted); font-size: 1rem; }
-.section-intro .text-link { margin-top: 1.5rem; }
-.project-list { padding-top: 1px; }
-.project-row { display: flex; align-items: flex-start; gap: 1.3rem; padding-block: 24px; border-bottom: 1px solid var(--line); }
-.project-row:first-child { padding-top: 7px; }
-.project-icon { display: grid; place-items: center; flex: 0 0 52px; width: 52px; height: 52px; border: 1px solid #dfe7fb; border-radius: 10px; background: #f3f6ff; color: var(--blue); }
-.project-icon svg { width: 32px; height: 32px; }
-.project-copy { flex: 1; }
-.project-title { display: flex; align-items: center; gap: .8rem; margin-bottom: .35rem; }
-h3 { font-size: 1.125rem; font-weight: 600; line-height: 1.5; letter-spacing: -.02em; }
-.status { color: #586579; border: 1px solid #d9dee6; border-radius: 30px; padding: .1rem .6rem; font-size: .875rem; line-height: 1.5; }
-.project-copy p { color: var(--muted); font-size: 1rem; max-width: 370px; }
-.project-domain { display: block; margin-top: .6rem; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .8125rem; color: #637087; }
 .writing-section { padding-bottom: 74px; }
 .writing-panel { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 3rem; background: #f0f4fa; padding: 58px 66px; border-radius: 3px; }
 .notebook-art { display: flex; justify-content: center; align-items: stretch; width: fit-content; margin: 0 auto; transform: rotate(-7deg); filter: drop-shadow(9px 15px 10px #17253d20); }
@@ -94,7 +80,7 @@ h3 { font-size: 1.125rem; font-weight: 600; line-height: 1.5; letter-spacing: -.
   .hero { gap: 2.2rem; padding-block: 64px 72px; }
   h1 { font-size: clamp(2.5rem, 4.7vw, 3.3rem); }
   .hero-art { min-height: 405px; }
-  .projects-section, .about-section { gap: 3rem; }
+  .about-section { gap: 3rem; }
   .writing-panel { padding: 45px 35px; gap: 2.5rem; }
 }
 @media (max-width: 760px) {
@@ -112,12 +98,8 @@ h3 { font-size: 1.125rem; font-weight: 600; line-height: 1.5; letter-spacing: -.
   .hero-note { margin-top: 1.4rem; }
   .hero-art { width: min(100%, 470px); min-height: 400px; justify-self: center; }
   .principle-drawing { max-height: 335px; }
-  .projects-section, .about-section { grid-template-columns: 1fr; gap: 2rem; padding-block: 40px 48px; }
+  .about-section { grid-template-columns: 1fr; gap: 2rem; padding-block: 40px 48px; }
   h2 { font-size: 2.25rem; }
-  .section-intro > p:not(.eyebrow) { max-width: 440px; }
-  .section-intro .text-link { margin-top: 1rem; }
-  .project-row { padding-block: 23px; }
-  .project-copy p { max-width: none; }
   .writing-section { padding-bottom: 48px; }
   .writing-panel { grid-template-columns: 1fr; gap: 2.8rem; padding: 40px 25px; }
   .notebook-cover { width: 207px; min-height: 270px; }
@@ -135,9 +117,6 @@ h3 { font-size: 1.125rem; font-weight: 600; line-height: 1.5; letter-spacing: -.
   h1 { font-size: 2.65rem; }
   .hero-art { min-height: 355px; }
   .hero-actions { gap: 1.3rem; }
-  .project-row { gap: .9rem; }
-  .project-icon { flex-basis: 44px; width: 44px; height: 44px; border-radius: 8px; }
-  .project-icon svg { width: 28px; height: 28px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
